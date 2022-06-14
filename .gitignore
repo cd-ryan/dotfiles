@@ -1,0 +1,6 @@
+entr/entr
+entr/*.o
+entr/entr_spec
+entr/Makefile
+
+
