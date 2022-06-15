@@ -1,6 +1,3 @@
 [submodule "entr"]
 	path = entr
-	url = https://github.com/eradman/entr
-[submodule ".config/vis/vis-go"]
-	path = .config/vis/vis-go
 	url = https://github.com/eradman/entr.git
