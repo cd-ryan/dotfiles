@@ -11,10 +11,10 @@ vis.events.subscribe(vis.events.WIN_OPEN, function(win)
 	vis:command('set number')
 	vis:command('set ai on')
 	vis:command('map! insert <C-h> <Left>')
+	vis:command('set tabwidth 4')
 
 	if vis.win.syntax == "python" then
 		vis:command('set et on')
-		vis:command('set tabwidth 4')
-		vis:command('set cc 72')
+		vis:command('set cc 100')
 	end
 end)
