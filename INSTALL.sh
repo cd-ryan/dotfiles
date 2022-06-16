@@ -22,7 +22,7 @@ export GOPATH="$HOME/go"
 go get github.com/rogpeppe/godef
 go get golang.org/x/tools/cmd/gorename
 
-rsync -a "$SCRIPTDIR/.config/vis/" "$HOME/.config/vis" || exit 1
+rsync -a "$SCRIPTDIR/.config/" "$HOME/.config" || exit 1
 cp "$SCRIPTDIR"/.bashrc "$HOME"/. || exit 1
 cp "$SCRIPTDIR"/.zshrc "$HOME"/. || exit 1
 rsync -a "$SCRIPTDIR"/liquidprompt/ "$HOME"/liquidprompt
