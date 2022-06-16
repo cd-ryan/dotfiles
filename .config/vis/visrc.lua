@@ -11,7 +11,7 @@ vis.events.subscribe(vis.events.WIN_OPEN, function(win)
 	vis:command('set number')
 	vis:command('set ai on')
 
-	if vis.win.syntax ~= "py" then
+	if vis.win.syntax == "python" then
 		vis:command('set et on')
 		vis:command('set tabwidth 4')
 		vis:command('set cc 72')
