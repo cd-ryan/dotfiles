@@ -33,3 +33,10 @@ if [ ! -d "$HOME"/.fzf ]; then
     sh -c 'yes | ~/.fzf/install' || exit 1
 fi
 
+if which cc >/dev/null 2>&1 && [ ! -f "$HOME"/bin/nq ]; then
+    cd "$SCRIPTDIR"/nq || exit 1
+    make check && make && cp nq fq "$HOME"/bin/.
+    cd - || exit 1
+fi
+cp "$SCRIPTDIR"/nq/nq.sh "$SCRIPTDIR"/nq/fq.sh "$HOME"/bin/.
+

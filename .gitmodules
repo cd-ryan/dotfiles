@@ -11,3 +11,6 @@
 	path = liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
 	branch = stable
+[submodule "nq"]
+	path = nq
+	url = https://github.com/leahneukirchen/nq.git
