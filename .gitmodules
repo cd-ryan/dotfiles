@@ -4,3 +4,10 @@
 [submodule ".config/vis/vis-go"]
 	path = .config/vis/vis-go
 	url = https://gitlab.com/timoha/vis-go.git
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "liquidprompt"]
+	path = liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
+	branch = stable
