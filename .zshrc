@@ -44,7 +44,7 @@ if [ -d "$HOME/go" ]; then
     export GOPATH=$HOME/go
     export PATH="$PATH:$GOPATH/bin"
 fi
-if [ -d "$HOME/bin" ]; then export PATH="$PATH:$HOME/bin" fi
+if [ -d "$HOME/bin" ]; then export PATH="$PATH:$HOME/bin"; fi
 
 # stop the damn blinking cursor in WSL
 echo -e -n "\e[2 q"
