@@ -14,11 +14,6 @@ date2uday() {
     echo $(($(date --utc --date "$1" +%s)/86400))
 }
 
-# bindings
-bindkey -v
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-
 # sourcing stuff
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
