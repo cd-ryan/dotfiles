@@ -19,8 +19,8 @@ cp entr "$HOME"/bin
 cd - >/dev/null || exit 1
 
 export GOPATH="$HOME/go"
-go get github.com/rogpeppe/godef
-go get golang.org/x/tools/cmd/gorename
+go install github.com/rogpeppe/godef@latest
+go install golang.org/x/tools/cmd/gorename@latest
 
 rsync -a "$SCRIPTDIR/.config/" "$HOME/.config" || exit 1
 cp "$SCRIPTDIR"/.bashrc "$HOME"/. || exit 1
