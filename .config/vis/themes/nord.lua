@@ -1,0 +1,37 @@
+-- Nord Theme that probably sucks. Sorry
+-- vis.lexers.STYLE_DEFAULT             = 'back:'..colors.bg0..',fore:'..colors.fg1
+vis.lexers.STYLE_DEFAULT                = 'back:#2e3440,fore:#d8dee9'
+vis.lexers.STYLE_NOTHING                = ''
+vis.lexers.STYLE_CLASS                  = 'fore:#8fbcbb'
+vis.lexers.STYLE_COMMENT                = 'fore:#616e88'
+vis.lexers.STYLE_CONSTANT               = 'fore:#81a1c1'
+vis.lexers.STYLE_DEFINITION             = 'fore:#88c0d0'
+vis.lexers.STYLE_ERROR                  = 'fore:#bf616a'
+vis.lexers.STYLE_FUNCTION               = 'fore:#88c0d0'
+vis.lexers.STYLE_KEYWORD                = 'fore:#81a1c1'
+vis.lexers.STYLE_LABEL                  = 'fore:#81a1c1'
+vis.lexers.STYLE_NUMBER                 = 'fore:#b48ead'
+vis.lexers.STYLE_OPERATOR               = 'fore:#81a1c1'
+vis.lexers.STYLE_REGEX                  = 'fore:#ebcb8b'
+vis.lexers.STYLE_STRING                 = 'fore:#a3be8c'
+vis.lexers.STYLE_PREPROCESSOR           = 'fore:#5e81ac'
+vis.lexers.STYLE_TAG                    = 'fore:#81a1c1'
+vis.lexers.STYLE_TYPE                   = 'fore:#8fbcbb'
+vis.lexers.STYLE_VARIABLE               = 'fore:#d8dee9'
+vis.lexers.STYLE_WHITESPACE             = ''
+vis.lexers.STYLE_EMBEDDED               = vis.lexers.STYLE_DEFAULT
+vis.lexers.STYLE_IDENTIFIER             = vis.lexers.STYLE_DEFAULT
+
+vis.lexers.STYLE_LINENUMBER             = 'fore:#4c566a'
+vis.lexers.STYLE_LINENUMBER_CURSOR      = 'fore:#d8dee9'
+vis.lexers.STYLE_CURSOR                 = 'fore:#2e3440,back:#d8dee9'
+vis.lexers.STYLE_CURSOR_PRIMARY         = 'fore:#2e3440,back:#d8dee9'
+vis.lexers.STYLE_CURSOR_LINE            = 'back:#4c566a'
+vis.lexers.STYLE_COLOR_COLUMN           = 'reverse'
+vis.lexers.STYLE_SELECTION              = 'back:#434c5e'
+vis.lexers.STYLE_STATUS                 = 'back:#3b4252,fore:#d8dee9'
+-- vis.lexers.STYLE_STATUS_FOCUSED         = 'back:#3b4252,fore:#4c566a'
+vis.lexers.STYLE_STATUS_FOCUSED         = 'back:#3b4252,fore:#d8dee9'
+vis.lexers.STYLE_SEPARATOR              = 'fore:#eceff4'
+vis.lexers.STYLE_INFO                   = 'fore:#88c0d0'
+vis.lexers.STYLE_EOF                    = vis.lexers.STYLE_LINENUMBER
