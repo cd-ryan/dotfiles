@@ -7,12 +7,20 @@ SAVEHIST=10000000
 HISTCONTROL="ignoredups"
 
 # aliases
-alias ls="ls -G --color"
+if ! ls -G >/dev/null 2>&1; then
+    alias ls="ls --color"
+else
+    alias ls="ls -G --color"
+fi
 
 # functions
 date2uday() {
     echo $(($(date --utc --date "$1" +%s)/86400))
 }
+
+# vars before sourcing
+export LP_ENABLE_COLOR=0
+export LS_COLORS=""
 
 # sourcing stuff
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt

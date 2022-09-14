@@ -15,7 +15,11 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 rm -f ~/.zcompdump; compinit
 
 # aliases
-alias ls="ls -G --color"
+if ! ls -G >/dev/null 2>&1; then
+    alias ls="ls --color"
+else
+    alias ls="ls -G --color"
+fi
 
 # functions
 date2uday() {
@@ -26,6 +30,10 @@ date2uday() {
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
+
+# vars before sourcing
+export LP_ENABLE_COLOR=0
+export LS_COLORS=""
 
 # sourcing stuff
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
